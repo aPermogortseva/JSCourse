@@ -1,10 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Первая страница</title>
 </head>
 <body>
+<form action="textarea1.php" method="post">
+    <p>
+        <label> Текстовое поле:
+            <input placeholder="Введите текст" name="Name" type="text">
+        </label>
+    </p>
 
+    <p>
+        <label> Многострочное поле:
+            <textarea placeholder="Введите текст" rows="1" cols="45" name="text"></textarea>
+        </label>
+    </p>
+
+    <p>
+        <label> Список с единичным выбором:
+            <select name="single_choice">
+                <option value="0">1</option>
+                <option value="1">2</option>
+                <option value="2">3</option>
+            </select>
+        </label>
+    </p>
+
+    <p>
+        <label> Список с множественным выбором:
+            <select size="3" multiple name="multiple_choice">
+                <option selected value="0">4</option>
+                <option value="1">5</option>
+                <option value="2">6</option>
+                <option value="3">7</option>
+            </select>
+        </label>
+    </p>
+
+    <div>
+        <label>
+            <input type="checkbox" name="first_checkbox" value="0">
+            Чекбокс 1
+        </label>
+
+        <label>
+            <input type="checkbox" name="second_checkbox" value="1">
+            Чекбокс 2
+        </label>
+
+        <label>
+            <input type="checkbox" name="third_checkbox" value="2">
+            Чекбокс 3
+        </label>
+    </div>
+
+    <div>
+        <label>
+            <input name="radio" checked type="radio" value="0">
+            Радио-баттон 1
+        </label>
+
+        <label>
+            <input name="radio" type="radio" value="1">
+            Радио-баттон 2
+        </label>
+
+        <label>
+            <input name="radio" type="radio" value="2">
+            Радио-баттон 3
+        </label>
+    </div>
+
+    <p>
+        <button type="submit">Отправить</button>
+    </p>
+
+    <p>
+        <a href="SecondPage.html">На вторую страницу</a>
+    </p>
+</form>
 </body>
 </html>
