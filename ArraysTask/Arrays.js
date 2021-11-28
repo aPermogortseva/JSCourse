@@ -11,7 +11,7 @@
     var firstFiveNumbers = numbers.slice(0, 5);
     console.log("Подмассив из первых пяти чисел: [" + firstFiveNumbers + "]");
 
-    var lastFiveNumbers = numbers.slice(numbers.length - 5, numbers.length);
+    var lastFiveNumbers = numbers.slice(numbers.length - 5);
     console.log("Подмассив из последних пяти чисел: [" + lastFiveNumbers + "]");
 
     var evenNumbersSum = numbers.reduce(function (sum, current) {
@@ -26,11 +26,11 @@
         numbers2.push(i);
     }
 
-    var evenNumbersSquares = numbers2.filter(function (current) {
-        return current % 2 === 0
-    })
-        .map(function (current) {
-            return Math.pow(current, 2)
+    var evenNumbersSquares = numbers2
+        .filter(function (current) {
+            return current % 2 === 0;
+        }).map(function (current) {
+            return Math.pow(current, 2);
         });
 
     console.log("Список квадратов чётных чисел: " + evenNumbersSquares);
