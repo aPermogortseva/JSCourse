@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Конвертер температур</title>
+</head>
+<body>
+<h1>Конвертер температур</h1>
+
+<form>
+    <label>Температура в градусах Цельсия:
+        <input placeholder="Введите значение" onkeydown="return checkInput(event.key)" id="celsius-temperature-input" type="text">
+    </label>
+    <button type="button" id="convert-button">Конвертировать</button>
+</form>
+
+<p>
+    <label> Температура в Кельвинах:
+        <input id="kelvin-temperature" type="text" readonly>
+    </label>
+</p>
+
+<p>
+    <label> Температура в Фаренгейтах:
+        <input id="fahrenheit-temperature" type="text" readonly>
+    </label>
+</p>
+
+<script defer src="Converter.js"></script>
+</body>
+</html>
