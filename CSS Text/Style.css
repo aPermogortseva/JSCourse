@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(254, 238, 214);
+    margin: -14px 14px 2px 11px;
+    max-height: inherit;
+}
+
+h1.header {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 34px;
+
+    margin-bottom: 0;
+}
+
+.text {
+    color: rgb(117, 105, 103);
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.blue {
+    font-weight: bold;
+    color: rgb(55, 141, 178);
+}
+
+.strike {
+    text-decoration: line-through;
+}
+
+p.section {
+    margin-top: 13px;
+    margin-bottom: 0;
+}
+
+.text.long {
+    line-height: 24px;
+    text-indent: 17px;
+    text-align: justify;
+
+    margin-top: 10px;
+    margin-bottom: auto;
+}
