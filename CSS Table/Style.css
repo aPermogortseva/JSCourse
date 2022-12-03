@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+.table {
+    border-collapse: collapse;
+    font-family: Calibri, sans-serif;
+    font-size: 24px;
+    border-color: rgb(204, 204, 204);
+
+    table-layout: auto;
+    width: 100%;
+
+    text-align: left;
+    text-indent: 10px;
+}
+
+tbody tr:nth-child(odd) {
+    background: rgb(238, 238, 238);
+}
+
+.table th {
+    background: rgb(52, 152, 219);
+    color: rgb(255, 255, 255);
+}
+
+.block {
+    margin: 20px auto;
+    max-width: 860px;
+}
+
+th,td {
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
