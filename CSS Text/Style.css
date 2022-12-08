@@ -3,29 +3,40 @@
 }
 
 body {
-    background: rgb(254, 238, 214);
-    margin: -14px 14px 2px 11px;
-    max-height: inherit;
+    height: 100%;
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: #756967;
+
+    font-size: 18px;
+    line-height: 23px;
+}
+
+body > div {
+    background: #feeed6;
+
+    max-width: 848px;
+
+    margin: 25px auto;
+    padding: 7px 14px 3px 12px;
 }
 
 h1.header {
     font-weight: 500;
     font-size: 32px;
-    line-height: 34px;
+    line-height: 35px;
 
-    margin-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 12px;
 }
 
-.text {
-    color: rgb(117, 105, 103);
-
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+h1 ~ div {
+    margin-top: 13px;
 }
 
 .blue {
     font-weight: bold;
-    color: rgb(55, 141, 178);
+    color: #378db2;
 }
 
 .strike {
@@ -33,15 +44,14 @@ h1.header {
 }
 
 p.section {
-    margin-top: 13px;
-    margin-bottom: 0;
+    margin-top: 11px;
+    margin-bottom: 8px;
 }
 
-.text.long {
-    line-height: 24px;
+.long {
     text-indent: 17px;
     text-align: justify;
 
-    margin-top: 10px;
-    margin-bottom: auto;
+    margin-top: 0;
+    margin-bottom: 0;
 }
