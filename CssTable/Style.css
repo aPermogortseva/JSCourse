@@ -6,22 +6,20 @@
     border-collapse: collapse;
     font-family: Calibri, sans-serif;
     font-size: 24px;
-    border-color: rgb(204, 204, 204);
 
     table-layout: auto;
     width: 100%;
 
     text-align: left;
-    text-indent: 10px;
 }
 
-tbody tr:nth-child(odd) {
-    background: rgb(238, 238, 238);
+.table-body tr:nth-child(odd) {
+    background: #eee;
 }
 
 .table th {
-    background: rgb(52, 152, 219);
-    color: rgb(255, 255, 255);
+    background: #3498db;
+    color: #fff;
 }
 
 .block {
@@ -29,7 +27,7 @@ tbody tr:nth-child(odd) {
     max-width: 860px;
 }
 
-th,td {
-    padding-top: 11px;
-    padding-bottom: 11px;
+.table-row th, td {
+    padding: 12px 11px 11px;
+    border: 1px solid #ccc;
 }
