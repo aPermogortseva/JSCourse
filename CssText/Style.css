@@ -12,7 +12,7 @@ body {
     line-height: 23px;
 }
 
-body > div {
+body > .divide {
     background: #feeed6;
 
     max-width: 848px;
@@ -30,10 +30,6 @@ h1.header {
     margin-bottom: 12px;
 }
 
-h1 ~ div {
-    margin-top: 13px;
-}
-
 .blue {
     font-weight: bold;
     color: #378db2;
@@ -46,6 +42,10 @@ h1 ~ div {
 p.section {
     margin-top: 11px;
     margin-bottom: 8px;
+}
+
+.text.long + .text.long {
+    margin-top: 13px;
 }
 
 .long {
