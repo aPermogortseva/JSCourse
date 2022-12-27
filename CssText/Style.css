@@ -12,7 +12,7 @@ body {
     line-height: 23px;
 }
 
-body > .divide {
+.course-information {
     background: #feeed6;
 
     max-width: 848px;
@@ -27,7 +27,7 @@ h1.header {
     line-height: 35px;
 
     margin-top: 0;
-    margin-bottom: 12px;
+    margin-bottom: 13px;
 }
 
 .blue {
@@ -39,19 +39,23 @@ h1.header {
     text-decoration: line-through;
 }
 
-p.section {
-    margin-top: 11px;
-    margin-bottom: 8px;
+p.section-text {
+    margin-top: 9px;
+    margin-bottom: 7px;
 }
 
-.text.long + .text.long {
+.section-text:last-child {
     margin-top: 13px;
 }
 
-.long {
+.text-long p:first-child {
+    margin-top: 9px;
+}
+
+.text-long p {
     text-indent: 17px;
     text-align: justify;
 
-    margin-top: 0;
+    margin-top: 14px;
     margin-bottom: 0;
 }
