@@ -13,7 +13,7 @@
     text-align: left;
 }
 
-.table-body tr:nth-child(odd) {
+.table tr:nth-child(odd) {
     background: #eee;
 }
 
@@ -27,7 +27,8 @@
     max-width: 860px;
 }
 
-.table-row th, td {
+.table th,
+.table td {
     padding: 12px 11px 11px;
     border: 1px solid #ccc;
 }
