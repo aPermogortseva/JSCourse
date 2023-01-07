@@ -39,12 +39,12 @@ h1.header {
     text-decoration: line-through;
 }
 
-p.section-text {
+.sections p {
     margin-top: 9px;
     margin-bottom: 7px;
 }
 
-.section-text:last-child {
+.sections p:last-child {
     margin-top: 13px;
 }
 
