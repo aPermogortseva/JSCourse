@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+.block {
+    margin: 20px auto;
+    max-width: 860px;
+}
+
 .table {
     border-collapse: collapse;
     font-family: Calibri, sans-serif;
@@ -20,11 +25,6 @@
 .table th {
     background: #3498db;
     color: #fff;
-}
-
-.block {
-    margin: 20px auto;
-    max-width: 860px;
 }
 
 .table th,
