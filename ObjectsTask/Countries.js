@@ -62,14 +62,8 @@
     ];
 
     function getMaxCitiesCountCountries(countries) {
-        var maxCitiesCuntInCurrentCountry = 0;
-
         var maxCitiesCount = countries.reduce(function (max, currentCountry) {
-            if (currentCountry.cities.length > maxCitiesCuntInCurrentCountry) {
-                maxCitiesCuntInCurrentCountry = currentCountry.cities.length;
-            }
-
-            return maxCitiesCuntInCurrentCountry;
+            return max > currentCountry.cities.length ? max : currentCountry.cities.length;
         }, 0);
 
         return countries
@@ -89,7 +83,7 @@
             totalCountriesPopulation[countryName] = country.cities.reduce(function (sum, city) {
                 return sum + city.population;
             }, 0);
-        })
+        });
 
         return totalCountriesPopulation;
     }
