@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+body > * {
+    padding-left: 10px;
+}
+
+.form > *,
+.todo-item > * {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.error-message {
+    display: none;
+    color: #f00;
+}
+
+.invalid {
+    border-color: #f00;
+}
+
+.invalid ~ .error-message {
+    display: block;
+}
+
+#todo-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    max-width: 410px;
+}
+
+.todo-item + .todo-item {
+    margin-top: 10px;
+}
+
+.todo-item-text,
+.edit-todo-item {
+    padding-right: 10px;
+    width: 200px;
+}
+
+.todo-item {
+    list-style-type: none;
+}
