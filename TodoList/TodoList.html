@@ -9,19 +9,21 @@
     <script defer src="TodoList.js"></script>
 </head>
 <body>
-<h1>Список задач</h1>
+<div class="container">
+    <h1>Список задач</h1>
 
-<form id="form" class="form">
-    <label for="new-todo-text">Введите текст:</label>
+    <form id="form" class="form">
+        <label for="new-todo-text">Введите текст:</label>
 
-    <div>
-        <input type="text" id="new-todo-text">
-        <div class="error-message">Необходимо заполнить поле!</div>
-    </div>
+        <div>
+            <input type="text" id="new-todo-text">
+            <div class="error-message">Необходимо заполнить поле!</div>
+        </div>
 
-    <button type="submit" id="add-button"> Добавить</button>
-</form>
+        <button type="submit" id="add-button"> Добавить</button>
+    </form>
 
-<ul id="todo-list"></ul>
+    <ul id="todo-list" class="todo-list"></ul>
+</div>
 </body>
 </html>

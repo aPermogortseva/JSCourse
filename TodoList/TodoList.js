@@ -18,9 +18,18 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
+        var todoItem = document.createElement("li");
+        todoItem.classList.add("todo-item");
+
+        setViewMode();
+
+        todoList.appendChild(todoItem);
+
+        newTodoTextInput.value = "";
+
         function setEditMode() {
             todoItem.innerHTML = "<div><input class='edit-todo-item' type='text'>\
-            <div class=\"error-message\">Необходимо заполнить поле!</div></div>\
+               <div class='error-message'>Необходимо заполнить поле!</div></div>\
                <button class='save-button' type='button'>Сохранить</button>\
                <button class='cancel-button' type='button'>Отменить</button>";
 
@@ -48,8 +57,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
         function setViewMode() {
             todoItem.innerHTML = "<span class='todo-item-text'></span>\
-            <button class='edit-button' type='button'>Редактировать</button>\
-            <button class='delete-button' type='button'>Удалить</button>";
+                <button class='edit-button' type='button'>Редактировать</button>\
+                <button class='delete-button' type='button'>Удалить</button>";
 
             todoItem.querySelector(".todo-item-text").textContent = newTodoText;
 
@@ -61,14 +70,5 @@ document.addEventListener("DOMContentLoaded", function () {
                 setEditMode();
             });
         }
-
-        var todoItem = document.createElement("li");
-        todoItem.classList.add("todo-item");
-
-        setViewMode();
-
-        todoList.appendChild(todoItem);
-
-        newTodoTextInput.value = "";
     });
 });

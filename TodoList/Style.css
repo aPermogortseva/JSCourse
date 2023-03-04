@@ -2,8 +2,9 @@
     box-sizing: border-box;
 }
 
-body > * {
-    padding-left: 10px;
+.container {
+    margin: 0 auto;
+    max-width: 413px;
 }
 
 .form > *,
@@ -25,11 +26,14 @@ body > * {
     display: block;
 }
 
-#todo-list {
+.form {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
-    max-width: 410px;
+    justify-content: space-between;
+}
+
+.todo-list {
+    padding-left: 0;
 }
 
 .todo-item + .todo-item {
@@ -44,4 +48,14 @@ body > * {
 
 .todo-item {
     list-style-type: none;
+}
+
+.cancel-button,
+.delete-button {
+    width: 85px;
+}
+
+.save-button,
+.edit-button {
+    width: 120px;
 }
