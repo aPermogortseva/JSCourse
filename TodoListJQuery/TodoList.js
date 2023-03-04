@@ -18,11 +18,19 @@ $(function () {
             return;
         }
 
+        var todoItem = $("<li>").addClass("todo-item");
+
+        setViewMode();
+
+        todoList.append(todoItem);
+
+        newTodoTextInput.val("");
+
         function setEditMode() {
             todoItem.html("<div><input class='edit-todo-item' type='text'>\
-            <div class=\"error-message\">Необходимо заполнить поле!</div></div>\
-               <button class='save-button' type='button'>Сохранить</button>\
-               <button class='cancel-button' type='button'>Отменить</button>");
+                                <div class='error-message'>Необходимо заполнить поле!</div></div>\
+                           <button class='save-button' type='button'>Сохранить</button>\
+                           <button class='cancel-button' type='button'>Отменить</button>");
 
             todoItem.find(".edit-todo-item").val(newTodoText);
 
@@ -31,12 +39,14 @@ $(function () {
             });
 
             todoItem.find(".save-button").click(function () {
-                var editedTodoText = todoItem.find(".edit-todo-item").val().trim();
+                var editedTodoItem = todoItem.find(".edit-todo-item");
 
-                todoItem.find(".edit-todo-item").removeClass("invalid");
+                var editedTodoText = editedTodoItem.val().trim();
+
+                editedTodoItem.removeClass("invalid");
 
                 if (editedTodoText.length === 0) {
-                    todoItem.find(".edit-todo-item").addClass("invalid");
+                    editedTodoItem.addClass("invalid");
                     return;
                 }
 
@@ -48,8 +58,8 @@ $(function () {
 
         function setViewMode() {
             todoItem.html("<span class='todo-item-text'></span>\
-            <button class='edit-button' type='button'>Редактировать</button>\
-            <button class='delete-button' type='button'>Удалить</button>");
+                           <button class='edit-button' type='button'>Редактировать</button>\
+                           <button class='delete-button' type='button'>Удалить</button>");
 
             todoItem.find(".todo-item-text").text(newTodoText);
 
@@ -61,13 +71,5 @@ $(function () {
                 setEditMode();
             });
         }
-
-        var todoItem = $("<li>").addClass("todo-item");
-
-        setViewMode();
-
-        todoList.append(todoItem);
-
-        newTodoTextInput.val("");
     });
 });
